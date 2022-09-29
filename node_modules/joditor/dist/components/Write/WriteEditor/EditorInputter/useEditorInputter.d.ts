@@ -1,0 +1,23 @@
+import React from "react";
+import { line } from "lib/Store/WriteEditorStore/type";
+declare const useEditorInputter: (data: line) => {
+    onChangeText: (e: React.ChangeEvent<HTMLTextAreaElement>, id: number) => void;
+    clickTagButton: () => void;
+    onKeyPressEnter: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
+    onKeyDownArrowUp: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
+    onKeyDownArrowDown: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
+    onKeyDownSpace: () => void;
+    onKeyDownTab: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
+    onKeyDownBackspace: () => void;
+    onKeyDownZ: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
+    onDropUrl: (e: React.DragEvent<HTMLTextAreaElement>) => void;
+    onBlur: (e: React.FocusEvent<HTMLTextAreaElement, Element>) => void;
+    dragOver: () => void;
+    dragLeave: () => void;
+    onPasteImg: (e: React.ClipboardEvent<HTMLTextAreaElement>) => void;
+    click: () => void;
+    inputterRef: React.RefObject<HTMLTextAreaElement>;
+    text: string;
+    drogOver: boolean;
+};
+export default useEditorInputter;
