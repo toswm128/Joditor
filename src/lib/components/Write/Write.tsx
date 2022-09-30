@@ -1,10 +1,11 @@
 import { WriteContainer } from "lib/components/Write/WriteStyle";
+import { IJoditorOption } from "lib/Joditor";
 import WriteEditor from "./WriteEditor";
 
-const Write = () => {
+const Write = ({ onSubmit, onCancle }: IJoditorOption) => {
   return (
     <WriteContainer>
-      <WriteEditor />
+      <WriteEditor onSubmit={onSubmit} onCancle={onCancle} />
     </WriteContainer>
   );
 };

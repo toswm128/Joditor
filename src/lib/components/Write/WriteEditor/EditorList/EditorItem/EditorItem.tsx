@@ -41,7 +41,6 @@ const EditorItem = ({ line, index }: TEditorItem) => {
             </H3>
           );
         case "a":
-          console.log("a지나감");
           return (
             <A key={data.id}>
               <EditorInputter data={data} key={data.id} />

@@ -5,8 +5,9 @@ import { line } from "lib/Store/WriteEditorStore/type";
 import styled from "@emotion/styled";
 import Submit from "./Submit/Submit";
 import CancelButton from "./Submit/Buttons/CancelButton";
+import { IJoditorOption } from "lib/Joditor";
 
-const EditorList = () => {
+const EditorList = ({ onSubmit, onCancle }: IJoditorOption) => {
   const {
     WriteEditorState: { body, head },
     dropLine,
@@ -36,7 +37,6 @@ const EditorList = () => {
       <DragDropContext
         onDragEnd={(result) => {
           if (!result.destination) return;
-          console.log(result.destination.index, dom);
           dropLine(
             result.source.index,
             result.destination?.index,
@@ -60,7 +60,7 @@ const EditorList = () => {
         </Droppable>
       </DragDropContext>
       <Buttons>
-        <Submit dom={dom} />
+        <Submit dom={dom} onSubmit={onSubmit} />
         <CancelButton />
       </Buttons>
     </>

@@ -6,7 +6,6 @@ const CancelButton = () => {
   return (
     <DefaultButton
       onClick={() => {
-        console.log("cancle");
         reset();
       }}
       isAbled={false}

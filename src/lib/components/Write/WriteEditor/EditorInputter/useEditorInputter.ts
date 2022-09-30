@@ -81,7 +81,6 @@ const useEditorInputter = (data: line) => {
       if (inputterRef.current && !e.nativeEvent.isComposing) {
         if (WriteEditorState.tagBoxId !== null) {
           focusPrevTag();
-          console.log(WriteEditorState.tagBoxId);
         } else focusPrevLine(data.id, inputterRef.current.selectionEnd);
       }
     },
@@ -168,7 +167,6 @@ const useEditorInputter = (data: line) => {
       if (e.dataTransfer.files[0] !== undefined) {
         // dropImg(data.id, URL.createObjectURL(e.dataTransfer.files[0]), true);
       } else if (e.dataTransfer.getData("url") !== undefined) {
-        console.log(e.dataTransfer.types, e.dataTransfer.getData("url"));
         // dropImg(data.id, e.dataTransfer.getData("url"), true);
       }
     },

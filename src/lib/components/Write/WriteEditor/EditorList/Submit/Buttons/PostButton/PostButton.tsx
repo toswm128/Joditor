@@ -1,7 +1,8 @@
 import DefaultButton from "lib/components/common/Buttons/DefaultButton";
 import useWrite from "lib/write/useWrite";
+import { ISubmit } from "../../Submit";
 
-const PostButton = ({ dom }: { dom: any[] }) => {
+const PostButton = ({ dom, onSubmit }: ISubmit) => {
   const {
     WriteEditorState: { title },
     reset,
@@ -10,7 +11,7 @@ const PostButton = ({ dom }: { dom: any[] }) => {
   return (
     <DefaultButton
       onClick={() => {
-        console.log(dom);
+        onSubmit(dom);
         reset();
       }}
       isAbled={title ? true : false}

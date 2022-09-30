@@ -1,11 +1,13 @@
 import PostButton from "./Buttons/PostButton";
 
-interface ISubmit {
+type dom = any[];
+export interface ISubmit {
   dom: any[];
+  onSubmit: (dom: dom) => void;
 }
 
-const Submit = ({ dom }: ISubmit) => {
-  return <PostButton dom={dom} />;
+const Submit = ({ dom, onSubmit }: ISubmit) => {
+  return <PostButton onSubmit={onSubmit} dom={dom} />;
 };
 
 export default Submit;
