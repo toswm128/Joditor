@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useDispatch } from "react-redux";
-import { useTypedSelector } from "lib/Store/rootReducer";
+import { useTypedSelector } from "../Store/rootReducer";
 import {
   ADD_LINE,
   UNDO,
@@ -32,7 +32,7 @@ import {
   FOCUS_NEXT_TAG,
   FOCUS_SET_UP_TAG,
   PUT_SET_UP,
-} from "lib/Store/WriteEditorStore/actions";
+} from "../Store/WriteEditorStore/actions";
 
 const useWrite = () => {
   const dispatch = useDispatch();

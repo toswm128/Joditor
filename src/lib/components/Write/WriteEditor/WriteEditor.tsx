@@ -2,7 +2,7 @@ import EditorList from "./EditorList";
 import { WriteComponent } from "../WriteStyle";
 import EditorBanner from "./EditorBanner/EditorBanner";
 import EditorTitle from "./EditorTitle/EditorTitle";
-import { IJoditorOption } from "lib/Joditor";
+import { IJoditorOption } from "../../../Joditor";
 
 const WriteEditor = ({ onSubmit, onCancle }: IJoditorOption) => {
   return (

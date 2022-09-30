@@ -1,13 +1,13 @@
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import styled from "@emotion/styled";
-import useWrite from "lib/write";
+import useWrite from "../../../../write";
 import { useEffect } from "react";
 import ReactTextareaAutosize from "react-textarea-autosize";
-import { line } from "lib/Store/WriteEditorStore/type";
+import { line } from "../../../../Store/WriteEditorStore/type";
 import TagBox from "./TagBox";
 import useEditorInputter from "./useEditorInputter";
-import tag from "lib/assets/png/tag.png";
+import tag from "../../../../assets/png/tag.png";
 
 const EditorInputter = ({ data }: { data: line }) => {
   const { WriteEditorState } = useWrite();

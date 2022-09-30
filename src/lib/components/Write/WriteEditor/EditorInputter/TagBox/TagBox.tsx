@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { browserColor } from "lib/style/color";
+import { browserColor } from "../../../../../style/color";
 import TagList from "./TagList";
 
 interface ITagBox {

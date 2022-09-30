@@ -1,4 +1,4 @@
-import useWrite from "lib/write";
+import useWrite from "../../../../write";
 import { useEffect, useState } from "react";
 
 const EditorTitle = () => {

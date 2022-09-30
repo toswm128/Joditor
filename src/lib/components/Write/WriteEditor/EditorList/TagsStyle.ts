@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
-import { backgroundColor, basicColor, DisabledColor } from "lib/style/color";
+import {
+  backgroundColor,
+  basicColor,
+  DisabledColor,
+} from "../../../../style/color";
 
 export const H1 = styled.h1`
   margin: 0;

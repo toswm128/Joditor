@@ -1,5 +1,5 @@
-import DefaultButton from "lib/components/common/Buttons/DefaultButton";
-import useWrite from "lib/write/useWrite";
+import DefaultButton from "../../../../../../../components/common/Buttons/DefaultButton";
+import useWrite from "../../../../../../../write/useWrite";
 import { ISubmit } from "../../Submit";
 
 const PostButton = ({ dom, onSubmit }: ISubmit) => {

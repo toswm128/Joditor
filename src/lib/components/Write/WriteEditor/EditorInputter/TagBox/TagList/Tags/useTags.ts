@@ -1,4 +1,4 @@
-import useWrite from "lib/write/useWrite";
+import useWrite from "../../../../../../../write/useWrite";
 
 const useTags = () => {
   const {

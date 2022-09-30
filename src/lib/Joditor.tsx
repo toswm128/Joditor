@@ -1,4 +1,4 @@
-import WritePage from "lib/pages/WritePage";
+import WritePage from "./pages/WritePage";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";

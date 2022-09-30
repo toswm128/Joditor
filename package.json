@@ -1,6 +1,6 @@
 {
   "name": "joditor",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "private": false,
   "main": "dist/Joditor.js",
   "types": "dist/Joditor.d.ts",
@@ -9,6 +9,10 @@
     "editor",
     "notion",
     "react"
+  ],
+  "files": [
+    "dist",
+    "lib"
   ],
   "description": "노션을 참고하여 만든 위즈윅 에디터 입니다.",
   "repository": {
@@ -28,6 +32,7 @@
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "immer": "^9.0.12",
+    "joditor": "^0.1.6",
     "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
     "react-contenteditable": "^3.3.6",

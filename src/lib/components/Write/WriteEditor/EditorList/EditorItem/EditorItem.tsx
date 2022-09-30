@@ -1,8 +1,8 @@
 import { useCallback } from "react";
-import { line } from "lib/Store/WriteEditorStore/type";
+import { line } from "../../../../../Store/WriteEditorStore/type";
 import EditorInputter from "../../EditorInputter";
 import { A, CallOut, Code, H1, H2, H3, Img } from "../TagsStyle";
-import useWrite from "lib/write/useWrite";
+import useWrite from "../../../../../write/useWrite";
 import { Draggable } from "react-beautiful-dnd";
 
 interface TEditorItem {

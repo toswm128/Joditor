@@ -1,5 +1,5 @@
-import Write from "lib/components/Write";
-import { IJoditorOption } from "lib/Joditor";
+import Write from "../../components/Write";
+import { IJoditorOption } from "../../Joditor";
 
 const WritePage = ({ onSubmit, onCancle }: IJoditorOption) => {
   return (

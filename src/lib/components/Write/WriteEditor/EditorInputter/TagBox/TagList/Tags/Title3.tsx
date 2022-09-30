@@ -1,7 +1,7 @@
 import { TagContainer } from "./TagsStyle";
-import useWrite from "lib/write/useWrite";
+import useWrite from "../../../../../../../write/useWrite";
 import useTags from "./useTags";
-import img from "lib/assets/png/h3.png";
+import img from "../../../../../../../assets/png/h3.png";
 
 const Title3 = () => {
   const { setTag2H3 } = useWrite();

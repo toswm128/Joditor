@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { basicColor } from "lib/style/color";
+import { basicColor } from "../../style/color";
 
 export const WriteContainer = styled.div`
   /* 레이아웃 */

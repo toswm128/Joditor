@@ -2,7 +2,7 @@
 import { css } from "@emotion/react";
 import heart_white from "assets/png/heart_white.png";
 import unHeart from "assets/png/unHeart.png";
-import { buttonBackgroundColor, buttonTextColor } from "lib/style/color";
+import { buttonBackgroundColor, buttonTextColor } from "../../../style/color";
 
 interface ILikeButton {
   isLike: boolean;

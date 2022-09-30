@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
-import { buttonBackgroundColor, buttonTextColor } from "lib/style/color";
+import { buttonBackgroundColor, buttonTextColor } from "../../../style/color";
 
 interface IDefaultButton {
   onClick?: () => any;

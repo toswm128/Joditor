@@ -1,7 +1,7 @@
 import { TagContainer } from "./TagsStyle";
-import useWrite from "lib/write/useWrite";
+import useWrite from "../../../../../../../write/useWrite";
 import useTags from "./useTags";
-import img from "lib/assets/png/link.png";
+import img from "../../../../../../../assets/png/link.png";
 
 const Hyperlink = () => {
   const { setTag2A } = useWrite();

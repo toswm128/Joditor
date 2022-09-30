@@ -1,6 +1,6 @@
-import useWrite from "lib/write";
+import useWrite from "../../../../write";
 import React, { useCallback, useRef, useState } from "react";
-import { line } from "lib/Store/WriteEditorStore/type";
+import { line } from "../../../../Store/WriteEditorStore/type";
 import useTags from "./TagBox/TagList/Tags/useTags";
 
 const useEditorInputter = (data: line) => {

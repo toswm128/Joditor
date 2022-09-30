@@ -1,5 +1,5 @@
-import { WriteContainer } from "lib/components/Write/WriteStyle";
-import { IJoditorOption } from "lib/Joditor";
+import { WriteContainer } from "../../components/Write/WriteStyle";
+import { IJoditorOption } from "../../Joditor";
 import WriteEditor from "./WriteEditor";
 
 const Write = ({ onSubmit, onCancle }: IJoditorOption) => {

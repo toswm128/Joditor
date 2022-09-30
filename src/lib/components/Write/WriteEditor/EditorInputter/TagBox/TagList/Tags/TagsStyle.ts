@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { backgroundColor } from "lib/style/color";
+import { backgroundColor } from "../../../../../../../style/color";
 
 export const TagContainer = styled.div`
   padding: 6px 0;

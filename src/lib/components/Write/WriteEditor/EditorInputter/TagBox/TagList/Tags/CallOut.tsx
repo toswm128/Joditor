@@ -1,7 +1,7 @@
 import { TagContainer } from "./TagsStyle";
-import useWrite from "lib/write/useWrite";
+import useWrite from "../../../../../../../write/useWrite";
 import useTags from "./useTags";
-import img from "lib/assets/png/callOut.png";
+import img from "../../../../../../../assets/png/callOut.png";
 
 const CallOut = () => {
   const { setTag2CallOut } = useWrite();

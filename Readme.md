@@ -30,7 +30,7 @@ import Joditor from "joditor";
 const Editor = () => {
   return (
     <div>
-      <Joditor onSubmit={(dom) => {}} onCancle={() => {}} />
+      <Joditor onSubmit={(dom) => {}} onCancel={() => {}} />
     </div>
   );
 };
@@ -43,4 +43,4 @@ const Editor = () => {
 | title    | Type | Default | Description                                   |
 | -------- | ---- | ------- | --------------------------------------------- |
 | onSubmit | func | null    | 작성하기 버튼을 눌렀을때 실행될 callback 함수 |
-| onCancle | func | null    | 취소하기 버튼을 눌렀을때 실행될 callback 함수 |
+| onCancel | func | null    | 취소하기 버튼을 눌렀을때 실행될 callback 함수 |

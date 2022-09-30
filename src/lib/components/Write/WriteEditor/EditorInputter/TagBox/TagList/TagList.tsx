@@ -5,8 +5,8 @@ import Title3 from "./Tags/Title3";
 import Hyperlink from "./Tags/Hyperlink";
 import Code from "./Tags/Code";
 import CallOut from "./Tags/CallOut";
-import useWrite from "lib/write/useWrite";
-import { backgroundColor } from "lib/style/color";
+import useWrite from "../../../../../../write/useWrite";
+import { backgroundColor } from "../../../../../../style/color";
 
 const TagList = () => {
   const {

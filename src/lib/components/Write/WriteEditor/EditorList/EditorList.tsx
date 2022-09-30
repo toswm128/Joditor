@@ -1,11 +1,11 @@
-import useWrite from "lib/write";
+import useWrite from "../../../../write";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import EditorItem from "./EditorItem/EditorItem";
-import { line } from "lib/Store/WriteEditorStore/type";
+import { line } from "../../../../Store/WriteEditorStore/type";
 import styled from "@emotion/styled";
 import Submit from "./Submit/Submit";
 import CancelButton from "./Submit/Buttons/CancelButton";
-import { IJoditorOption } from "lib/Joditor";
+import { IJoditorOption } from "../../../../Joditor";
 
 const EditorList = ({ onSubmit, onCancle }: IJoditorOption) => {
   const {
