@@ -1,29 +1,34 @@
 {
   "name": "joditor",
-  "version": "0.1.6",
+  "version": "0.1.14",
   "private": false,
-  "main": "dist/Joditor.js",
-  "types": "dist/Joditor.d.ts",
+  "main": "dist/index.js",
   "browser": "./browser/specific/main.js",
   "keywords": [
     "editor",
     "notion",
     "react"
   ],
-  "files": [
-    "dist",
-    "lib"
-  ],
   "description": "노션을 참고하여 만든 위즈윅 에디터 입니다.",
   "repository": {
     "type": "git",
     "url": "https://github.com/toswm128/Joditor"
   },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6"
+  },
   "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@loadable/component": "^5.15.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-url": "^7.0.0",
+    "@svgr/rollup": "^6.3.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -32,11 +37,8 @@
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "immer": "^9.0.12",
-    "joditor": "^0.1.6",
-    "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
     "react-contenteditable": "^3.3.6",
-    "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
     "react-scripts": "5.0.0",
     "react-syntax-highlighter": "^15.5.0",
@@ -48,11 +50,13 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "deploy": "yarn build && npm publish",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && rollup -c",
+    "watch": "rollup -cw",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist && tsc "
+    "publish:npm": "rm -rf dist && mkdir dist && tsc && babel src/lib/assets -d dist --copy-files "
   },
   "eslintConfig": {
     "extends": [
@@ -74,8 +78,20 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
     "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^14.1.0",
     "@types/react-beautiful-dnd": "^13.1.2",
-    "@types/react-syntax-highlighter": "^15.5.4"
+    "@types/react-syntax-highlighter": "^15.5.4",
+    "babel-preset-react-app": "^10.0.1",
+    "rollup": "^2.79.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
   }
 }

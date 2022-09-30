@@ -5,8 +5,8 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import rootReducer from "./Store";
 
 export interface IJoditorOption {
-  onSubmit: (dom: any[]) => void;
-  onCancle: () => void;
+  onSubmit?: (dom: any[]) => void;
+  onCancle?: () => void;
 }
 
 function Joditor({ onSubmit, onCancle }: IJoditorOption) {

@@ -1,12 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Joditor from "./lib/Joditor";
-// import Joditor from "joditor";
+import App from "./App";
+
 ReactDOM.render(
   <React.StrictMode>
-    <div>
-      <Joditor />
-    </div>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -11,7 +11,7 @@ const PostButton = ({ dom, onSubmit }: ISubmit) => {
   return (
     <DefaultButton
       onClick={() => {
-        onSubmit(dom);
+        onSubmit && onSubmit(dom);
         reset();
       }}
       isAbled={title ? true : false}
