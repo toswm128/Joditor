@@ -1,7 +1,6 @@
 import WritePage from "./pages/WritePage";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import { composeWithDevTools } from "redux-devtools-extension";
 import rootReducer from "./Store";
 
 export interface IJoditorOption {
@@ -10,7 +9,7 @@ export interface IJoditorOption {
 }
 
 function Joditor({ onSubmit, onCancle }: IJoditorOption) {
-  const store = createStore(rootReducer, composeWithDevTools());
+  const store = createStore(rootReducer);
   return (
     <Provider store={store}>
       <WritePage onSubmit={onSubmit} onCancle={onCancle} />

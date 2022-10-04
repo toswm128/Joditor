@@ -11,7 +11,7 @@ const CancelButton = () => {
       isAbled={false}
       size={"M"}
     >
-      <>취소</>
+      <>Cancel</>
     </DefaultButton>
   );
 };

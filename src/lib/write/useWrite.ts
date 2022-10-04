@@ -295,7 +295,7 @@ const useWrite = () => {
   }, [dispatch]);
 
   const putSetUp = useCallback(
-    (body, title, id) => {
+    (body: any, title: any, id: any) => {
       dispatch({
         type: PUT_SET_UP,
         payload: { body, title, id },

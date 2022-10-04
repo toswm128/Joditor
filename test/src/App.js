@@ -4,7 +4,7 @@ import Joditor from "joditor";
 function App() {
   return (
     <div className="App">
-      <Joditor />
+      <Joditor onSubmit={(dom) => console.log(dom)} />
     </div>
   );
 }

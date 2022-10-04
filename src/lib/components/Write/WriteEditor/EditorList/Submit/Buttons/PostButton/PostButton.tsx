@@ -17,7 +17,7 @@ const PostButton = ({ dom, onSubmit }: ISubmit) => {
       isAbled={title ? true : false}
       size={"M"}
     >
-      <>작성하기</>
+      <>Submit</>
     </DefaultButton>
   );
 };

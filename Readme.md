@@ -1,11 +1,10 @@
 # joditor
 
-노션을 참고하여 만든 위즈윅 에디터 입니다.
+Like Notion, it is a WYSIWYG editor with multiple features.
+
 <br/>
 
-## 설치
-
----
+## Install
 
 ### npm
 
@@ -19,9 +18,7 @@ npm install joditor
 yarn add joditor
 ```
 
-## 사용방법
-
----
+## How to use
 
 ```jsx
 import React from "react";
@@ -38,9 +35,7 @@ const Editor = () => {
 
 ## Props
 
----
-
-| title    | Type | Default | Description                                   |
-| -------- | ---- | ------- | --------------------------------------------- |
-| onSubmit | func | null    | 작성하기 버튼을 눌렀을때 실행될 callback 함수 |
-| onCancel | func | null    | 취소하기 버튼을 눌렀을때 실행될 callback 함수 |
+| title    | Type | Default | Description                                      |
+| -------- | ---- | ------- | ------------------------------------------------ |
+| onSubmit | func | null    | submit callback. has dom as argument (dom)=> ... |
+| onCancel | func | null    | cancel callback. ()=> ...                        |
