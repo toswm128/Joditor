@@ -3,8 +3,9 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import rootReducer from "./Store";
 
+export type dom = { title: string; lines: any[] };
 export interface IJoditorOption {
-  onSubmit?: (dom: any[]) => void;
+  onSubmit?: (dom: dom) => void;
   onCancle?: () => void;
 }
 

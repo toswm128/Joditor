@@ -1,11 +1,15 @@
 import DefaultButton from "../../../../../../../components/common/Buttons/DefaultButton";
 import useWrite from "../../../../../../../write/useWrite";
 
-const CancelButton = () => {
+export interface ICancelButton {
+  onCancle?: () => void;
+}
+const CancelButton = ({ onCancle }: ICancelButton) => {
   const { reset } = useWrite();
   return (
     <DefaultButton
       onClick={() => {
+        onCancle && onCancle();
         reset();
       }}
       isAbled={false}

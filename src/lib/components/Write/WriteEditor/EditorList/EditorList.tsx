@@ -6,13 +6,14 @@ import styled from "@emotion/styled";
 import Submit from "./Submit/Submit";
 import CancelButton from "./Submit/Buttons/CancelButton";
 import { IJoditorOption } from "../../../../Joditor";
+import { useEffect } from "react";
 
 const EditorList = ({ onSubmit, onCancle }: IJoditorOption) => {
   const {
     WriteEditorState: { body, head },
     dropLine,
   } = useWrite();
-  const dom: any[] = [];
+  const lines: any[] = [];
 
   let next: number | null;
   let snext: number | null;
@@ -22,11 +23,11 @@ const EditorList = ({ onSubmit, onCancle }: IJoditorOption) => {
     if (key === 0) {
       next = body[head].next;
       snext = next;
-      dom.push(body[head]);
+      lines.push(body[head]);
     }
     if (next !== null) {
       snext = body[next].next;
-      dom.push(body[next]);
+      lines.push(body[next]);
     } else {
       return null;
     }
@@ -41,7 +42,7 @@ const EditorList = ({ onSubmit, onCancle }: IJoditorOption) => {
             result.source.index,
             result.destination?.index,
             +result.draggableId,
-            dom[result.destination?.index].id
+            lines[result.destination?.index].id
           );
         }}
       >
@@ -51,7 +52,7 @@ const EditorList = ({ onSubmit, onCancle }: IJoditorOption) => {
               ref={provided.innerRef}
               {...provided.droppableProps}
             >
-              {dom.map((line: line, key: number) => (
+              {lines.map((line: line, key: number) => (
                 <EditorItem key={line.id} line={line} index={key} />
               ))}
               {provided.placeholder}
@@ -60,8 +61,8 @@ const EditorList = ({ onSubmit, onCancle }: IJoditorOption) => {
         </Droppable>
       </DragDropContext>
       <Buttons>
-        <Submit dom={dom} onSubmit={onSubmit} />
-        <CancelButton />
+        <Submit lines={lines} onSubmit={onSubmit} />
+        <CancelButton onCancle={onCancle} />
       </Buttons>
     </>
   );

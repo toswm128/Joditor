@@ -1,8 +1,13 @@
+import { dom } from "lib/Joditor";
 import DefaultButton from "../../../../../../../components/common/Buttons/DefaultButton";
 import useWrite from "../../../../../../../write/useWrite";
-import { ISubmit } from "../../Submit";
 
-const PostButton = ({ dom, onSubmit }: ISubmit) => {
+interface IPostButton {
+  dom: dom;
+  onSubmit?: (dom: dom) => void;
+}
+
+const PostButton = ({ dom, onSubmit }: IPostButton) => {
   const {
     WriteEditorState: { title },
     reset,

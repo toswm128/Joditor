@@ -9,7 +9,7 @@ const EditorTitle = () => {
   } = useWrite();
   useEffect(() => {
     title && setText(title);
-  }, []);
+  }, [title]);
   return (
     <input
       type="text"

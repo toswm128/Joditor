@@ -1,13 +1,18 @@
+import { dom } from "lib/Joditor";
+import useWrite from "lib/write/useWrite";
 import PostButton from "./Buttons/PostButton";
 
-type dom = any[];
 export interface ISubmit {
-  dom: any[];
+  lines: any[];
   onSubmit?: (dom: dom) => void;
 }
 
-const Submit = ({ dom, onSubmit }: ISubmit) => {
-  return <PostButton onSubmit={onSubmit} dom={dom} />;
+const Submit = ({ lines, onSubmit }: ISubmit) => {
+  const {
+    WriteEditorState: { title },
+  } = useWrite();
+
+  return <PostButton onSubmit={onSubmit} dom={{ title, lines }} />;
 };
 
 export default Submit;
