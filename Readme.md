@@ -4,8 +4,8 @@ Like Notion, it is a WYSIWYG editor with multiple features.
 
 <div style="display:flex; justify-content:space-between">
 
-<img src="https://joblog-images-buckit.s3.ap-northeast-2.amazonaws.com/images/6f8ed419-b69f-4ef9-803e-9862e0879351.gif" width="40%" />
-<img src="https://joblog-images-buckit.s3.ap-northeast-2.amazonaws.com/images/e86632d3-86aa-4238-9b41-b5dfb4a9e93b.00" width="50%"  />
+<img src="https://joblog-images-buckit.s3.ap-northeast-2.amazonaws.com/images/title+move.gif" alt="" width="40%" />
+<img src="https://joblog-images-buckit.s3.ap-northeast-2.amazonaws.com/images/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA+2022-10-05+%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB+10.00.36.png" alt="" width="50%"  />
 
 </div>
 <br/>
