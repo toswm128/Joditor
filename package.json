@@ -1,16 +1,17 @@
 {
   "name": "joditor",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "private": false,
   "main": "dist/index.js",
   "browser": "./browser/specific/main.js",
   "keywords": [
     "editor",
     "notion",
-    "react"
+    "react",
+    "WYSIWYG"
   ],
   "license": "MIT",
-  "description": "노션을 참고하여 만든 위즈윅 에디터 입니다.",
+  "description": "Like Notion, it is a WYSIWYG editor with multiple features.  ",
   "repository": {
     "type": "git",
     "url": "https://github.com/toswm128/Joditor"
