@@ -5927,10 +5927,10 @@ jest@^27.4.3:
     import-local "^3.0.2"
     jest-cli "^27.5.1"
 
-joditor@^0.1.22:
-  version "0.1.22"
-  resolved "https://registry.yarnpkg.com/joditor/-/joditor-0.1.22.tgz#019dd151d126c44cf040e0e4364e0f97d7b52741"
-  integrity sha512-HtTH3jaJ3t2duHTGvfE6OX00fbOTuCnkAEdooaIvoaiZbDFOFqahYDE0/hNHuB/JzSs25xLvjyk1AYEY+flxMQ==
+joditor@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/joditor/-/joditor-0.2.1.tgz#bf091d70683d6e12b4c1f8c1b1c7bbc993d9c4a3"
+  integrity sha512-dZ418kFRnVrItQ/liBO5fR9BUPevox8pMyJCvSw/dwHeboMr7ptIYlyCO12UrXrcd7Jl751YI621tIu6FvNDCg==
   dependencies:
     "@emotion/react" "^11.7.1"
     "@emotion/styled" "^11.6.0"

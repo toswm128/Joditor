@@ -6,32 +6,35 @@ import styled from "@emotion/styled";
 import Submit from "./Submit/Submit";
 import CancelButton from "./Submit/Buttons/CancelButton";
 import { IJoditorOption } from "../../../../Joditor";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const EditorList = ({ onSubmit, onCancle }: IJoditorOption) => {
   const {
     WriteEditorState: { body, head },
     dropLine,
   } = useWrite();
-  const lines: any[] = [];
+  const [lines, setLines] = useState<line[]>([]);
 
-  let next: number | null;
-  let snext: number | null;
-
-  body.map((_, key: number) => {
-    next = snext;
-    if (key === 0) {
-      next = body[head].next;
-      snext = next;
-      lines.push(body[head]);
-    }
-    if (next !== null) {
-      snext = body[next].next;
-      lines.push(body[next]);
-    } else {
-      return null;
-    }
-  });
+  useEffect(() => {
+    let next: number | null;
+    let snext: number | null;
+    const lines: line[] = [];
+    body.map((_, key: number) => {
+      next = snext;
+      if (key === 0) {
+        next = body[head].next;
+        snext = next;
+        lines.push(body[head]);
+      }
+      if (next !== null) {
+        snext = body[next].next;
+        lines.push(body[next]);
+      } else {
+        return null;
+      }
+    });
+    setLines(lines);
+  }, [body]);
 
   return (
     <>
