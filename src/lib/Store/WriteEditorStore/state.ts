@@ -11,8 +11,6 @@ const WriteEditorState: WriteEditorStateType = {
       src: "",
     },
   ],
-  trashList: [],
-  recycleList: [],
   title: "",
   banner: undefined,
   updatter: 1,
