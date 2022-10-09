@@ -17,7 +17,7 @@ const TagList = () => {
     { word: "/제목2", Tag: Title2 },
     { word: "/제목3", Tag: Title3 },
     { word: "/하이퍼링크", Tag: Hyperlink },
-    { word: "/코드", Tag: Code },
+    // { word: "/코드", Tag: Code },
     { word: "/콜아웃", Tag: CallOut },
   ];
   const search = () => {

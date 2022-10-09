@@ -1,14 +1,20 @@
 {
   "name": "joditor",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": false,
   "main": "dist/index.js",
   "browser": "./browser/specific/main.js",
   "keywords": [
     "editor",
-    "notion",
+    "wysiwyg",
+    "wysiwyg editor",
+    "text",
     "react",
-    "WYSIWYG"
+    "javascript",
+    "typescript",
+    "html",
+    "joditor",
+    "notion"
   ],
   "license": "MIT",
   "description": "Like Notion, it is a WYSIWYG editor with multiple features.  ",
@@ -26,7 +32,6 @@
     "immer": "^9.0.12",
     "react-beautiful-dnd": "^13.1.0",
     "react-redux": "^7.2.6",
-    "react-syntax-highlighter": "^15.5.0",
     "react-textarea-autosize": "^8.3.3",
     "redux": "^4.1.2",
     "typesafe-actions": "^5.1.0",
@@ -78,6 +83,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.34.0",
+    "rollup-plugin-visualizer": "^5.8.2",
     "tslib": "^2.4.0",
     "typescript": "^4.8.4",
     "webpack-bundle-analyzer": "^4.6.1"

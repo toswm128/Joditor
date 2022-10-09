@@ -1,5 +1,5 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import SyntaxHighlighter from "react-syntax-highlighter";
+// import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import styled from "@emotion/styled";
 import useWrite from "../../../../write";
 import { useEffect } from "react";
@@ -99,7 +99,7 @@ const EditorInputter = ({ data }: { data: line }) => {
         onChange={(e) => onChangeText(e, data.id)}
         onBlur={onBlur}
       />
-      {data.tag === "code" && (
+      {/* {data.tag === "code" && (
         <SyntaxHighlighter
           showLineNumbers
           onClick={() => click()}
@@ -113,7 +113,7 @@ const EditorInputter = ({ data }: { data: line }) => {
         >
           {text}
         </SyntaxHighlighter>
-      )}
+      )} */}
       {data.id === WriteEditorState.tagBoxId &&
         data.id === WriteEditorState.focusLine && (
           <TagBox inputterRef={inputterRef} />
