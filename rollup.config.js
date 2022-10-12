@@ -7,30 +7,42 @@ import babel from "@rollup/plugin-babel";
 import image from "@rollup/plugin-image";
 import json from "@rollup/plugin-json";
 import { visualizer } from "rollup-plugin-visualizer";
+import dts from "rollup-plugin-dts";
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default {
-  input: "src/lib/index.ts",
-  output: {
-    file: "dist/index.js",
-    format: "cjs",
-    sourcemap: true,
-    inlineDynamicImports: true,
-  },
+export default [
+  {
+    input: "src/lib/index.ts",
+    output: {
+      file: "dist/index.js",
+      format: "cjs",
+      sourcemap: true,
+      inlineDynamicImports: true,
+    },
 
-  plugins: [
-    commonjs(),
-    json(),
-    resolve(),
-    svgr(),
-    image(),
-    peerDepsExternal(),
-    babel({ exclude: "node_modules/**" }),
-    typescript({ useTsconfigDeclarationDir: true }),
-    visualizer({
-      filename: "dist/report.html",
-      open: true,
-      brotliSize: true,
-    }),
-  ],
-};
+    plugins: [
+      commonjs(),
+      json(),
+      resolve(),
+      image(),
+      peerDepsExternal(),
+      babel({ exclude: "node_modules/**" }),
+      typescript({ useTsconfigDeclarationDir: true }),
+      visualizer({
+        filename: "dist/report.html",
+        open: true,
+        brotliSize: true,
+      }),
+    ],
+  },
+  {
+    input: "src/lib/index.ts",
+    output: {
+      file: "dist/index.d.ts",
+      format: "cjs",
+      sourcemap: true,
+      inlineDynamicImports: true,
+    },
+    plugins: [dts()],
+  },
+];
